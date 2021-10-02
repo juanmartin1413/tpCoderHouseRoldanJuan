@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+
+footer {
+  @include colores($footer_color, $font_color_claro);
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .footer {
+    .footer__span {
+      font-weight: bold !important;
+    }
+
+    .footer__span--lightblue {
+      @extend .footer__span;
+      color: $footer_span_color;
+    }
+  }
+}

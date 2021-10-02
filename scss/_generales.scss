@@ -1,0 +1,42 @@
+@import "variables";
+@import "mixins";
+
+.btn-primary {
+  background-color: $btn_primary_color !important;
+  border-color: $btn_primary_color !important;
+}
+.card {
+  .card-header {
+    background-image: linear-gradient(
+      to bottom,
+      $card_header_color_desde,
+      $card_header_color_hasta
+    );
+    // background-color: $card_header_color;
+    color: $font_color_claro;
+  }
+  .card-body {
+    background-color: $card_body_color;
+  }
+}
+
+p {
+  text-align: justify;
+}
+
+.formulario {
+  .formulario__label {
+    font-weight: bold;
+  }
+  .formulario__input {
+    border-color: $border_color;
+    border-width: 0.15rem;
+  }
+  .formulario__txtAyuda {
+    font-style: italic;
+  }
+}
+
+.navbar-toggler {
+  background-color: $toogler_color;
+}

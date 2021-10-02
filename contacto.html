@@ -4,32 +4,71 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta
+      name="description"
+      content="Contacta al taller GT Racing para despejar tus dudas o realizar consultas"
+    />
+    <meta name="keywords" content="Contacto GT Racing, Consultas GT Racing" />
+    <meta name="author" content="Juan Martín Roldan" />
+    <meta name="copyright" content="Juan Martín Roldan" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
       rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
     />
-    <title>Contacto</title>
+    <link rel="stylesheet" href="scss/styles.css" />
+
+    <title>Taller GT Racing - Contacto</title>
   </head>
   <body>
     <header>
-      <div class="cabecera">
-        <div class="logo animate__animated animate__rotateIn"></div>
-        <div class="barraMenu topBotomBordersIn">
-          <nav class="menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="empresa.html">La empresa</a></li>
-              <li><a href="costos.html">Costos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
+      <div class="cabecera container-fluid">
+        <div class="row">
+          <div class="logo col-md-4 text-center">
+            <img
+              src="img/logo.png"
+              alt=""
+              class="
+                logo__img
+                img-fluid
+                rounded
+                animate__animated animate__rotateIn
+              "
+            />
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light col-md-8">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header4" id="navbarNav">
+              <ul class="navbar-nav menu4">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="empresa.html">La empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="costos.html">Costos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
@@ -37,44 +76,99 @@
     <main>
       <h1>Contactanos</h1>
       <p>Dejanos tus comentarios y nos comunicaremos a la brevedad</p>
-      <form action="">
-        <div>
-          <label for="nombre">Nombre</label>
-          <br />
-          <input type="text" name="nombre" />
+      <div class="container-fluid">
+        <div class="row">
+          <form class="formulario">
+            <div class="form-group mb-3">
+              <label for="nombre" class="formulario__label form-label"
+                >Nombre</label
+              >
+              <input type="text" class="formulario__input form-control" />
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="exampleInputEmail1"
+                class="formulario__label form-label"
+                >Email</label
+              >
+              <input
+                type="email"
+                class="formulario__input form-control"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="formulario__txtAyuda form-text">
+                Escribe tu correo electronico de cualquier dominio
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label for="motivo" class="formulario__label form-label"
+                >Motivo
+              </label>
+              <br />
+              <select
+                idclass="form-select form-select-lg"
+                aria-label=".form-select-lg example"
+              >
+                <option selected>Seleccione el motivo de la consulta</option>
+                <option value="1">Consulta</option>
+                <option value="2">Reclamo</option>
+                <option value="3">Presupuesto</option>
+              </select>
+            </div>
+            <div class="form-group mb-3">
+              <label for="comentario" class="formulario__label form-label"
+                >Consulta</label
+              >
+              <textarea
+                class="formulario__input form-control"
+                id="comentario"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="form-group mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="newsletter" />
+              <label class="formulario__label form-check-label" for="newsletter"
+                >Acepto suscribirme al newsletter</label
+              >
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </form>
         </div>
-        <div>
-          <label for="email">Email</label>
-          <br />
-          <input type="email" name="email" />
-        </div>
-        <div>
-          <label for="motivo">Motivo</label>
-          <br />
-          <select name="motivo" id="motivo">
-            <option value="c">Consulta</option>
-            <option value="r">Reclamo</option>
-            <option value="p">Presupuesto</option>
-          </select>
-        </div>
-        <div>
-          <label for="comentario">Comentario</label>
-          <br />
-          <textarea
-            name="comentario"
-            id="comentario"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </div>
-        <div>
-          <label for="newsletter">Acepto suscribirme al newsletter</label>
-          <br />
-          <input type="checkbox" name="newsletter" />
-        </div>
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Limpiar" />
-      </form>
+      </div>
     </main>
+    <footer>
+      <div class="container-fluid">
+        <div class="footer row">
+          <div class="col-md-4">
+            <span class="footer__span"
+              >Desarrollado por Juan Martín Roldan</span
+            >
+          </div>
+          <div class="col-md-4">
+            <span class="footer__span">Copyright © 2021</span>
+          </div>
+          <div class="col-md-4">
+            <span class="footer__span--lightblue"
+              >juanmartin1413@gmail.com</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

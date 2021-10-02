@@ -4,113 +4,181 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
+    <meta
+      name="description"
+      content="El taller mecánico GT Racing ofrece amplios servicios, al mejor precio y cuenta con diversas sucursales para que acudas a la mas cercana a tu zona"
     />
+    <meta
+      name="keywords"
+      content="Taller GT Racing, sucursal GT Racing, servicios GT Racing"
+    />
+    <meta name="author" content="Juan Martín Roldan" />
+    <meta name="copyright" content="Juan Martín Roldan" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>Taller mecánico XXX</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="scss/styles.css" />
+    <title>Taller mecánico GT Racing</title>
   </head>
   <body>
     <header>
-      <div class="cabecera">
-        <div class="logo animate__animated animate__rotateIn"></div>
-        <div class="barraMenu topBotomBordersIn">
-          <nav class="menu">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="empresa.html">La empresa</a></li>
-              <li><a href="costos.html">Costos</a></li>
-              <li><a href="contacto.html">Contacto</a></li>
-              <li><a href="login.html">Login</a></li>
-            </ul>
+      <div class="cabecera container-fluid">
+        <div class="row">
+          <div class="logo col-md-4 text-center">
+            <img
+              src="img/logo.png"
+              alt=""
+              class="
+                logo__img
+                img-fluid
+                rounded
+                animate__animated animate__rotateIn
+              "
+            />
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light col-md-8 col-">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse header4" id="navbarNav">
+              <ul class="navbar-nav menu4">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="empresa.html">La empresa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="costos.html">Costos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">Login</a>
+                </li>
+              </ul>
+            </div>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <div name="contenido" class="contenido">
-        <div name="noticias" class="noticias aumentarFontSize">
-          <section class="noticias__section1">
-            <h2>Precios de oferta en el mes de Agosto!</h2>
-            <p>
-              Durante todo el mes de Agosto tenemos precios de oferta en el
-              servicio de cambio de aceite y filtros. Para mas informacion,
-              consultá la seccion de <a href="costos.html">costos</a>
-            </p>
-            <hr />
-          </section>
-          <section class="noticias__section2">
-            <h2>Apertura de nueva sucursal!</h2>
-            <p>
-              Para acercar el mejor servicio a nuestros clientes, abrimos una
-              nueva sucursal en Lomas de Zamora, GBA zona sur. Contamos con el
-              mejor equipamiento y equipo de profesionales para que puedas dejar
-              tu vehiculo en las manos especializadas que se merece.
-            </p>
-            <hr />
-          </section>
-        </div>
-        <div name="imagenesDestacadas" class="imagenesDestacadas">
-          <input
-            class="radioCarrousel"
-            type="radio"
-            name="slider"
-            id="item-1"
-            checked
-          />
-          <input
-            class="radioCarrousel"
-            type="radio"
-            name="slider"
-            id="item-2"
-          />
-          <input
-            class="radioCarrousel"
-            type="radio"
-            name="slider"
-            id="item-3"
-          />
-          <div class="cards">
-            <label class="card" for="item-1" id="song-1">
-              <img
-                src="https://karbookpedia.com/wp-content/uploads/2020/04/Facebook_Post_-_33-1-2-900x600.png"
-                alt="song"
-                class="imgCarrousel acercarImagen"
-              />
-            </label>
-            <label class="card" for="item-2" id="song-2">
-              <img
-                src="https://blog.riosulense.com/es/content/uploads/2019/07/aumentar-la-productividad-del-taller-mecanico.jpg"
-                alt="song"
-                class="imgCarrousel acercarImagen"
-              />
-            </label>
-            <label class="card" for="item-3" id="song-3">
-              <img
-                src="https://img.autosblogmexico.com/2019/11/27/hVoAV2LR/mecanico-1-7492.jpg"
-                alt="song"
-                class="imgCarrousel acercarImagen"
-              />
-            </label>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card m-3">
+              <h5 class="card-header">Precios de oferta!</h5>
+              <div class="card-body">
+                <h5 class="card-title">Solo por el mes de Agosto</h5>
+                <p class="card-text">
+                  Durante todo el mes de Agosto tenemos precios de oferta en el
+                  servicio de cambio de aceite y filtros.
+                </p>
+                <a href="costos.html" class="btn btn-primary">Ver precios</a>
+              </div>
+            </div>
+            <div class="card m-3">
+              <h5 class="card-header">Nueva Sucursal!</h5>
+              <div class="card-body">
+                <h5 class="card-title">Ahora tambien estamos en GBA</h5>
+                <p class="card-text">
+                  Para acercar el mejor servicio a nuestros clientes, abrimos
+                  una nueva sucursal en Lomas de Zamora. Contamos con el mejor
+                  equipamiento y equipo de profesionales para que puedas dejar
+                  tu vehiculo en las manos especializadas que se merece.
+                </p>
+              </div>
+            </div>
+            <div class="card m-3">
+              <h5 class="card-header">Incorporamos nuevos servicios!</h5>
+              <div class="card-body">
+                <h5 class="card-title">Alineacion y balanceo</h5>
+                <p class="card-text">
+                  Ampliamos los servicios ofrecidos, incorporando equipamiento
+                  con la ultima tecnología para que puedas realizar tanto las
+                  reparaciones como la alineacion y balanceo de tu vehiculo todo
+                  en un solo lugar.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="imagenesDestacadas col-md-8">
+            <input type="radio" name="slider" id="item-1" checked />
+            <input type="radio" name="slider" id="item-2" />
+            <input type="radio" name="slider" id="item-3" />
+            <div class="cards">
+              <label class="card" for="item-1" id="song-1">
+                <img
+                  class="img-fluid"
+                  src="img/carrousel1.png"
+                  alt="Taller GT racing sucursal lomas de zamora"
+                />
+              </label>
+              <label class="card" for="item-2" id="song-2">
+                <img
+                  class="img-fluid"
+                  src="img/carrousel2.jpg"
+                  alt="Empleados trabajando en el diagnostico de un auto"
+                />
+              </label>
+              <label class="card" for="item-3" id="song-3">
+                <img
+                  class="img-fluid"
+                  src="img/carrousel3.jpg"
+                  alt="Autos en taller GT racin sucursal CABA"
+                />
+              </label>
+            </div>
           </div>
         </div>
       </div>
     </main>
-
-    <footer class="footer">
-      <section class="footer_section1">
-        <h4>Desarrollado por Juan Martin Roldán</h4>
-      </section>
-      <section class="footer_section2">
-        <h4>Copyright 2021</h4>
-      </section>
+    <footer>
+      <div class="container-fluid">
+        <div class="footer row">
+          <div class="col-md-4">
+            <span class="footer__span"
+              >Desarrollado por Juan Martín Roldan</span
+            >
+          </div>
+          <div class="col-md-4">
+            <span class="footer__span">Copyright © 2021</span>
+          </div>
+          <div class="col-md-4">
+            <span class="footer__span--lightblue"
+              >juanmartin1413@gmail.com</span
+            >
+          </div>
+        </div>
+      </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
